@@ -4,6 +4,12 @@
 
 This program is designed to display options for different products based on user input. It is currently incomplete, but has some limited functionality.
 
+## Installation
+
+If you're running this program for the first time, make sure you have Ruby installed locally. You can check by running the command `ruby -v`. If necessary, follow the instructions on the [Ruby documentation](https://www.ruby-lang.org/en/documentation/installation/) to install it.
+
+Before running the program, install the necessary gems by running the command `bundle` or `bundle install`. Once that is complete, you are ready to go!
+
 ## Instructions for use
 
 To run the program, navigate into its root directory using a command line interface and run the command `ruby main.rb`. You will see a prompt to enter a product type as well as 0 or more product options. You can exit the program at any time by entering `q` or `Q`.
