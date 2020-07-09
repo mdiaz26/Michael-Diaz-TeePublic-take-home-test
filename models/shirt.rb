@@ -1,3 +1,5 @@
+require_relative "product"
+
 class Shirt < Product
 
     @@all_shirts = []

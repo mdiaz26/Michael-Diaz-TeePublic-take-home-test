@@ -1,3 +1,5 @@
+require_relative "product"
+
 class Mug < Product
     
     @@all_mugs = []
@@ -9,6 +11,10 @@ class Mug < Product
         }
 
         @@all_mugs << self
+    end
+
+    def type
+        @options[:type]
     end
 
     def self.all
