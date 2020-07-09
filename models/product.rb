@@ -17,7 +17,6 @@ class Product
 
     def self.print_options(user_input)
         styles = []
-        # class_name = user_input[0].capitalize.constantize
             self.all.map{|object| 
                 if object.size == user_input[1] && !styles.include?(object.style)
                     styles << object.style
