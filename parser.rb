@@ -23,4 +23,19 @@ class Parser
         }
     end
 
+    def self.return_options(input)
+        parsed_input = input.split(' ')
+        case parsed_input[0]
+        when "tshirt"
+            
+        when "mug"
+            
+        when "sticker"
+            puts "Size: #{Sticker.sizes.join(", ")}"
+            puts "Style: #{Sticker.styles.join(", ")}"
+        else
+            puts "invalid input, please try again"
+        end
+    end
+
 end

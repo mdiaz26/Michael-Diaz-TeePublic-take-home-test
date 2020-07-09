@@ -3,6 +3,8 @@ require_relative "product"
 class Sticker < Product
     
     @@all_stickers = []
+    @@sticker_sizes = []
+    @@sticker_styles = []
     
     def initialize(product_info)
         super
@@ -12,6 +14,12 @@ class Sticker < Product
         }
 
         @@all_stickers << self
+        if !@@sticker_sizes.include?(@options[:size])
+            @@sticker_sizes << @options[:size]
+        end
+        if !@@sticker_styles.include?(@options[:style])
+            @@sticker_styles << @options[:style]
+        end
     end
 
     def size
@@ -24,6 +32,14 @@ class Sticker < Product
 
     def self.all
         @@all_stickers
+    end
+
+    def self.sizes
+        @@sticker_sizes
+    end
+
+    def self.styles
+        @@sticker_styles
     end
 
 end
