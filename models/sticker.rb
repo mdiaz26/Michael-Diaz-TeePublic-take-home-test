@@ -22,6 +22,17 @@ class Sticker < Product
         end
     end
 
+    # def self.print_options(user_input)
+    #     styles = []
+    #         Sticker.all.map{|sticker| 
+    #             if sticker.size == user_input[1] && !styles.include?(sticker.style)
+    #                 styles << sticker.style
+    #             end
+    #         }
+
+    #         puts "Style: #{styles.join(", ")}"
+    # end
+
     def size
         @options[:size]
     end

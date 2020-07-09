@@ -14,10 +14,10 @@ puts "You will then receive a list of available items that fit the submitted cri
 input = ""
 
 while input != "q" && input != "Q" do
-    puts "There are #{Mug.all.length} mugs."
-    puts "There are #{Shirt.all.length} tshirts."
-    puts "There are #{Sticker.all.length} stickers."
-    puts "Sticker sizes: #{Sticker.sizes}"
+    # puts "There are #{Mug.all.length} mugs."
+    # puts "There are #{Shirt.all.length} tshirts."
+    # puts "There are #{Sticker.all.length} stickers."
+    # puts "Sticker sizes: #{Sticker.sizes}"
     
     puts "Please enter a product type and 0 or more product options. Each input must be separated by a space."
     puts "Press q to quit."

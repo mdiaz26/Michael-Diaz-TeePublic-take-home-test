@@ -31,10 +31,21 @@ class Parser
         when "mug"
             
         when "sticker"
-            puts "Size: #{Sticker.sizes.join(", ")}"
-            puts "Style: #{Sticker.styles.join(", ")}"
+            self.print_sticker_options(parsed_input)
         else
             puts "invalid input, please try again"
+        end
+    end
+
+    def self.print_sticker_options(input)
+        case input.length
+        when 1
+            puts "Size: #{Sticker.sizes.join(", ")}"
+            puts "Style: #{Sticker.styles.join(", ")}"
+        when 2
+            Sticker.print_options(input)
+        else
+            return null
         end
     end
 
